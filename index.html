@@ -96,7 +96,15 @@
                     <span>Blog (*LogiClover)</span>
                   </el-menu-item>
                 </a>
+              </el-menu>
+            </el-card>
 
+            <el-card
+              class="card"
+              :body-style="{ padding: '0px' }"
+              shadow="always"
+            >
+              <el-menu class="menu">
                 <el-submenu>
                   <template slot="title">
                     <i
@@ -104,14 +112,143 @@
                       class="fas fa-file-code fa-2x"
                       aria-hidden="true"
                     ></i>
-                    <span>Skill: Programming</span>
+                    <span>Software Skill</span>
                     <i class="far fa-plus-square" aria-hidden="true"></i>
                   </template>
-                  <span>
-                    C, C++, VC++, C#, JavaScript, TypeScript, Scala, Python
-                    Verilog-HDL, Java, etc...
-                  </span>
+                  <h3>Language</h3>
+                  <li>
+                    <ul>
+                      C
+                    </ul>
+                    <ul>
+                      C++
+                    </ul>
+                    <ul>
+                      C#
+                    </ul>
+                    <ul>
+                      VC++
+                    </ul>
+                    <ul>
+                      JavaScript
+                    </ul>
+                    <ul>
+                      TypeScript
+                    </ul>
+                    <ul>
+                      Scala
+                    </ul>
+                    <ul>
+                      Python
+                    </ul>
+                    <ul>
+                      Verilog-HDL
+                    </ul>
+                    <ul>
+                      Java
+                    </ul>
+                  </li>
+
+                  <h3>Platform/Library/etc</h3>
+                  <li>
+                    <ul>
+                      Container Engine: Docker, Kubernetes
+                    </ul>
+                    <ul>
+                      Serverside: node.js, express.js, Flask, ASP.NET Core
+                    </ul>
+                    <ul>
+                      Database: mongodb, MySQL, Redis
+                    </ul>
+                    <ul>
+                      Google Cloud Platform: GAE, GKS, GCF, etc...
+                    </ul>
+                    <ul>
+                      Scraping: Headless Chrome(puppeteer), Selenium, PhantomJS
+                    </ul>
+                    <ul>
+                      Web Application: Angular(>=2.0), Vue.js
+                    </ul>
+                    <ul>
+                      Machine Learning: Keras, Tensorflow
+                    </ul>
+                    <ul>
+                      Desktop Application: WinForms, WPF(Legacy/MVVM)
+                    </ul>
+                    <ul>
+                      Mobile: Android App(only Java)
+                    </ul>
+                    <ul>
+                      Embedded: Cortex-M(Atmel, Cypress), Cortex-A(Zynq)
+                    </ul>
+                  </li>
                 </el-submenu>
+
+                <el-submenu>
+                  <template slot="title">
+                    <i
+                      style="color:slateblue;"
+                      class="fas fa-bolt fa-2x"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Hardware Skill</span>
+                    <i class="far fa-plus-square" aria-hidden="true"></i>
+                  </template>
+
+                  <h3>Develop/Evaluation</h3>
+                  <li>
+                    <ul>
+                      Circuit CAD/CAM(Maker in-house, KiCAD)
+                    </ul>
+                    <ul>
+                      3D CAD/CAE(Maker in-house, Designspark Mechanical)
+                    </ul>
+                    <ul>
+                      HDL Simulation(iSim, Vivado Simulator)
+                    </ul>
+                    <ul>
+                      Reliability Test/Quality assurance
+                    </ul>
+                  </li>
+
+                  <h3>Semiconductor Failure Analysis</h3>
+                  <li>
+                    <ul>
+                      Inspection: Visual, X-ray
+                    </ul>
+                    <ul>
+                      Measure: Oscilloscope, Parameter-analyzer, Curve-tracer
+                    </ul>
+                    <ul>
+                      Analysis: Infrared Lock-in Thermography, Emission
+                      microscope, IR-OBIRCH
+                    </ul>
+                    <ul>
+                      Decap/De-process: opened Chemicals, Dry etching, Chemical
+                      etching
+                    </ul>
+                    <ul>
+                      Electronic Microscope: SEM with { EDX, FIB(Focused
+                      ion-beam)}
+                    </ul>
+                  </li>
+                </el-submenu>
+
+                <el-submenu>
+                  <template slot="title">
+                    <i
+                      style="color:slateblue;"
+                      class="fas fa-info fa-2x"
+                      aria-hidden="true"
+                    ></i>
+                    <span>and More...</span>
+                    <i class="far fa-plus-square" aria-hidden="true"></i>
+                  </template>
+                  <span>Please ask me directly.</span>
+                </el-submenu>
+
+                <!-- 作ったものリストとか書こうと思ったんだけど、メンテめんどいのでgithub、blog等見るか直接聞いてください...。 -->
+
               </el-menu>
             </el-card>
           </el-col>
