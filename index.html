@@ -24,7 +24,7 @@
     <div id="app">
       <div class="container">
         <el-row class="content">
-          <h3>Maybe <span id="ityped" class="ityped"></span></h3>
+          <h5>Maybe <span id="ityped" class="ityped"></span></h5>
           <el-col>
             <el-card
               class="card"
@@ -46,7 +46,7 @@
               shadow="always"
             >
               <el-menu class="menu">
-                <el-menu-item>
+                <el-menu-item index="1">
                   <i
                     style="color:slateblue;"
                     class="fa fa-user fa-2x"
@@ -55,7 +55,7 @@
                   <span>F******* K********</span>
                 </el-menu-item>
 
-                <el-menu-item>
+                <el-menu-item index="2">
                   <i
                     style="color:slateblue;"
                     class="fa fa-envelope fa-2x"
@@ -65,7 +65,7 @@
                 </el-menu-item>
 
                 <a href="https://github.com/kamiyaowl">
-                  <el-menu-item>
+                  <el-menu-item index="3">
                     <i
                       style="color:slateblue;"
                       class="fab fa-github fa-2x"
@@ -76,7 +76,7 @@
                 </a>
 
                 <a href="https://twitter.com/kamiya_owl">
-                  <el-menu-item>
+                  <el-menu-item index="4">
                     <i
                       style="color:slateblue;"
                       class="fab fa-twitter fa-2x"
@@ -87,7 +87,7 @@
                 </a>
 
                 <a href="http://logiclover.hatenablog.jp/">
-                  <el-menu-item>
+                  <el-menu-item index="5">
                     <i
                       style="color:slateblue;"
                       class="fas fa-file-alt fa-2x"
@@ -105,7 +105,7 @@
               shadow="always"
             >
               <el-menu class="menu">
-                <el-submenu>
+                <el-submenu index="6">
                   <template slot="title">
                     <i
                       style="color:slateblue;"
@@ -113,7 +113,6 @@
                       aria-hidden="true"
                     ></i>
                     <span>Software Skill</span>
-                    <i class="far fa-plus-square" aria-hidden="true"></i>
                   </template>
                   <h3>Language</h3>
                   <li>
@@ -184,7 +183,7 @@
                   </li>
                 </el-submenu>
 
-                <el-submenu>
+                <el-submenu index="7">
                   <template slot="title">
                     <i
                       style="color:slateblue;"
@@ -192,7 +191,6 @@
                       aria-hidden="true"
                     ></i>
                     <span>Hardware Skill</span>
-                    <i class="far fa-plus-square" aria-hidden="true"></i>
                   </template>
 
                   <h3>Develop/Evaluation</h3>
@@ -234,7 +232,7 @@
                   </li>
                 </el-submenu>
 
-                <el-submenu>
+                <el-submenu index="8">
                   <template slot="title">
                     <i
                       style="color:slateblue;"
@@ -242,7 +240,6 @@
                       aria-hidden="true"
                     ></i>
                     <span>and More...</span>
-                    <i class="far fa-plus-square" aria-hidden="true"></i>
                   </template>
                   <span>Please ask me directly.</span>
                 </el-submenu>
@@ -264,8 +261,11 @@
         </el-row>
       </div>
     </div>
+    <!-- develop -->
+    <!-- <script src="https://unpkg.com/vue"></script> -->
+    <!-- production -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.7/dist/vue.js"></script>
 
-    <script src="https://unpkg.com/vue"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.0.0/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.0.0/locale/ja.js"></script>
 
@@ -274,7 +274,6 @@
       new Vue({
         el: "#app",
         data: () => ({
-          show: false
         })
       });
       ityped.init(document.querySelector("#ityped"), {
@@ -285,7 +284,7 @@
         startDelay: 1000,
         backDelay: 2000,
         strings: [
-          "Semiconductor Reliability Engineer",
+          "Reliability Engineer",
           "Failure Analysis Engineer",
           "Quality Engineer",
           "Embedded System Engineer",
