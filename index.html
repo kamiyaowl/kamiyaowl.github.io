@@ -2,12 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta lang="ja" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
     <div id="app">
+      <div class="container">
+        <div class="content">
+          <el-button @click="show = !show">Click Me</el-button>
+
+          <div style="display: flex; margin-top: 20px; height: 100px;">
+            <transition name="el-fade-in-linear">
+              <h1 v-show="show">まじか</h1>
+            </transition>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/vue"></script>
@@ -19,9 +32,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.0.0/locale/ja.js"></script>
 
     <script>
-      ELEMENT.locale(ELEMENT.lang.ja);
+      ELEMENT.locale("ja", ELEMENT.lang.ja);
       new Vue({
-        el: "#app"
+        el: "#app",
+        data: () => ({
+          show: false
+        })
       });
     </script>
   </body>
