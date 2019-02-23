@@ -1,3 +1,6 @@
+.material-icons {
+    font-size: 48px;
+}
 .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -18,4 +21,7 @@
 .image {
     width: 100%;
     display: block;
+}
+.menu {
+    text-align: left;
 }
