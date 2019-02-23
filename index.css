@@ -9,6 +9,7 @@
 .content {
     display: inline-block;
     width: 90vw;
+    max-width: 640px;
 }
 .card {
     margin: 5px;
