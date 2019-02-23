@@ -11,17 +11,20 @@
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" />
+
+    <script src="https://unpkg.com/ityped@1.0.3"></script>
   </head>
 
   <body>
     <div id="app">
       <div class="container">
         <el-row class="content">
+            <h2>Maybe <span id="ityped" class="ityped"></span></h2>
           <el-col>
             <el-card
               class="card"
@@ -48,10 +51,28 @@
                   <span>F******* K********</span>
                 </el-menu-item>
                 <el-menu-item>
-                  <i class="icons">email</i>
+                  <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                   <span>kamiyaowl [at] gmail.com</span>
                 </el-menu-item>
-
+                <a href="https://github.com/kamiyaowl">
+                  <el-menu-item>
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                    <span>kamiyaowl</span>
+                  </el-menu-item>
+                </a>
+                <a href="https://twitter.com/kamiya_owl">
+                  <el-menu-item>
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                    <span>kamiya_owl</span>
+                  </el-menu-item>
+                </a>
+                <a href="http://logiclover.hatenablog.jp/">
+                    <el-menu-item>
+                      <i class="fas fa-file-alt fa-2x" aria-hidden="true"></i>
+                      <span>Blog (*LogiClover)</span>
+                    </el-menu-item>
+                  </a>
+  
                 <el-submenu>
                   <template slot="title">
                     <i class="icons">camera_enhance</i>
@@ -83,8 +104,11 @@
               </el-menu>
             </el-card>
           </el-col>
+          <div>
+          <span>2019 </span>
+          </el-row>
         </el-row>
-      </div>
+    </div>
     </div>
 
     <script src="https://unpkg.com/vue"></script>
@@ -98,6 +122,17 @@
         data: () => ({
           show: false
         })
+      });
+      ityped.init(document.querySelector("#ityped"), {
+          loop: true,
+          showCursor: false,
+          strings: [
+            "Electrical and Electronics Engineer",
+            "Semiconductor Reliability Engineer",
+            "Embedded System Engineer",
+            "Desktop Application Engineer",
+            "Web Engineer",
+          ],
       });
     </script>
   </body>

@@ -1,6 +1,3 @@
-.icons {
-    font-size: 32px;
-}
 .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -13,7 +10,6 @@
 .content {
     display: inline-block;
     width: 80vw;
-    background:yellow;
 }
 .card {
     margin: 5px;
@@ -24,4 +20,35 @@
 }
 .menu {
     text-align: left;
+}
+.fa-2x {
+    margin-right: 10px;
+}
+
+/* iTyped.js */
+.ityped-cursor {
+    font-size: 2.2rem;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
 }
