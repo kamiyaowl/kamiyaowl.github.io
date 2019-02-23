@@ -8,4 +8,14 @@
     height: 100vh;
 }
 .content {
+    display: inline-block;
+    width: 80vw;
+    background:yellow;
+}
+.card {
+    margin: 5px;
+}
+.image {
+    width: 100%;
+    display: block;
 }

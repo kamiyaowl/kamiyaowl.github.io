@@ -11,15 +11,25 @@
   <body>
     <div id="app">
       <div class="container">
-        <div class="content">
-          <el-button @click="show = !show">Click Me</el-button>
-
-          <div style="display: flex; margin-top: 20px; height: 100px;">
-            <transition name="el-fade-in-linear">
-              <h1 v-show="show">まじか</h1>
-            </transition>
-          </div>
-        </div>
+        <el-row class="content">
+          <el-col>
+            <el-card class="card" :body-style="{ padding: '0px' }">
+              <img
+                src="https://avatars0.githubusercontent.com/u/4300987?s=460&v=4"
+                class="image"
+              />
+              <div style="padding: 14px;">Kamiya</div>
+            </el-card>
+          </el-col>
+          <el-col>
+            <el-card class="card" :body-style="{ padding: '0px' }">
+              <el-collapse>
+                <el-collapse-item title="Consistency"> </el-collapse-item>
+                <el-collapse-item title="Consistency"> </el-collapse-item>
+              </el-collapse>
+            </el-card>
+          </el-col>
+        </el-row>
       </div>
     </div>
 
