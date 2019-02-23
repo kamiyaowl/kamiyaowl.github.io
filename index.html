@@ -10,8 +10,10 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -40,13 +42,19 @@
               :body-style="{ padding: '0px' }"
               shadow="always"
             >
-              <el-menu
-                default-active="2"
-                class="menu"
-              >
-                <el-submenu index="1">
+              <el-menu class="menu">
+                <el-menu-item>
+                  <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                  <span>F******* K********</span>
+                </el-menu-item>
+                <el-menu-item>
+                  <i class="icons">email</i>
+                  <span>kamiyaowl [at] gmail.com</span>
+                </el-menu-item>
+
+                <el-submenu>
                   <template slot="title">
-                    <i class="el-icon-location"></i>
+                    <i class="icons">camera_enhance</i>
                     <span>Navigator One</span>
                   </template>
                   <el-menu-item-group title="Group One">
@@ -63,30 +71,16 @@
                     <el-menu-item index="1-4-1">item one</el-menu-item>
                   </el-submenu>
                 </el-submenu>
-                <el-menu-item index="2">
-                  <i class="el-icon-menu"></i>
-                  <span>Navigator Two</span>
-                </el-menu-item>
-                <el-menu-item index="3" disabled>
+
+                <el-menu-item disabled>
                   <i class="el-icon-document"></i>
                   <span>Navigator Three</span>
                 </el-menu-item>
-                <el-menu-item index="4">
+                <el-menu-item>
                   <i class="el-icon-setting"></i>
                   <span>Navigator Four</span>
                 </el-menu-item>
               </el-menu>
-
-
-
-              <i class="material-icons">camera_enhance</i>
-              <i class="el-icon-edit"></i>
-              <el-collapse>
-                <el-collapse-item title="Consistency">
-                  asdf
-                </el-collapse-item>
-                <el-collapse-item title="Consistency"> </el-collapse-item>
-              </el-collapse>
             </el-card>
           </el-col>
         </el-row>
