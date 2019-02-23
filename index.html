@@ -24,7 +24,7 @@
     <div id="app">
       <div class="container">
         <el-row class="content">
-            <h2>Maybe <span id="ityped" class="ityped"></span></h2>
+          <h2>Maybe <span id="ityped" class="ityped"></span></h2>
           <el-col>
             <el-card
               class="card"
@@ -47,68 +47,76 @@
             >
               <el-menu class="menu">
                 <el-menu-item>
-                  <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                  <i
+                    style="color:slateblue;"
+                    class="fa fa-user fa-2x"
+                    aria-hidden="true"
+                  ></i>
                   <span>F******* K********</span>
                 </el-menu-item>
+
                 <el-menu-item>
-                  <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                  <i
+                    style="color:slateblue;"
+                    class="fa fa-envelope fa-2x"
+                    aria-hidden="true"
+                  ></i>
                   <span>kamiyaowl [at] gmail.com</span>
                 </el-menu-item>
+
                 <a href="https://github.com/kamiyaowl">
                   <el-menu-item>
-                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                    <i
+                      style="color:slateblue;"
+                      class="fab fa-github fa-2x"
+                      aria-hidden="true"
+                    ></i>
                     <span>kamiyaowl</span>
                   </el-menu-item>
                 </a>
+
                 <a href="https://twitter.com/kamiya_owl">
                   <el-menu-item>
-                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                    <i
+                      style="color:slateblue;"
+                      class="fab fa-twitter fa-2x"
+                      aria-hidden="true"
+                    ></i>
                     <span>kamiya_owl</span>
                   </el-menu-item>
                 </a>
+
                 <a href="http://logiclover.hatenablog.jp/">
-                    <el-menu-item>
-                      <i class="fas fa-file-alt fa-2x" aria-hidden="true"></i>
-                      <span>Blog (*LogiClover)</span>
-                    </el-menu-item>
-                  </a>
-  
+                  <el-menu-item>
+                    <i
+                      style="color:slateblue;"
+                      class="fas fa-file-alt fa-2x"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Blog (*LogiClover)</span>
+                  </el-menu-item>
+                </a>
+
                 <el-submenu>
                   <template slot="title">
-                    <i class="icons">camera_enhance</i>
-                    <span>Navigator One</span>
+                    <i
+                      style="color:slateblue;"
+                      class="fas fa-file-code fa-2x"
+                      aria-hidden="true"
+                    ></i>
+                    <span>Skill: Programming</span>
+                    <i class="far fa-plus-square" aria-hidden="true"></i>
                   </template>
-                  <el-menu-item-group title="Group One">
-                    <el-menu-item index="1-1">item one</el-menu-item>
-                    <el-menu-item index="1-2">item one</el-menu-item>
-                  </el-menu-item-group>
-                  <el-menu-item-group title="Group Two">
-                    <el-menu-item index="1-3">item three</el-menu-item>
-                  </el-menu-item-group>
-                  <el-submenu index="1-4">
-                    <template slot="title"
-                      >item four</template
-                    >
-                    <el-menu-item index="1-4-1">item one</el-menu-item>
-                  </el-submenu>
+                  <span>
+                    C, C++, VC++, C#, JavaScript, TypeScript, Scala, Python
+                    Verilog-HDL, Java, etc...
+                  </span>
                 </el-submenu>
-
-                <el-menu-item disabled>
-                  <i class="el-icon-document"></i>
-                  <span>Navigator Three</span>
-                </el-menu-item>
-                <el-menu-item>
-                  <i class="el-icon-setting"></i>
-                  <span>Navigator Four</span>
-                </el-menu-item>
               </el-menu>
             </el-card>
           </el-col>
-          <div>
-          <span>2019 </span>
-          </el-row>
         </el-row>
-    </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/vue"></script>
@@ -124,15 +132,21 @@
         })
       });
       ityped.init(document.querySelector("#ityped"), {
-          loop: true,
-          showCursor: false,
-          strings: [
-            "Electrical and Electronics Engineer",
-            "Semiconductor Reliability Engineer",
-            "Embedded System Engineer",
-            "Desktop Application Engineer",
-            "Web Engineer",
-          ],
+        loop: true,
+        showCursor: true,
+        typeSpeed: 50,
+        backSpeed: 20,
+        startDelay: 1000,
+        backDelay: 2000,
+        strings: [
+          "Electrical and Electronics Engineer",
+          "Semiconductor Reliability Engineer",
+          "Semiconductor Failure Analysis Engineer",
+          "Embedded System Engineer",
+          "Desktop Application Engineer",
+          "Back-end Engineer",
+          "Front-end Engineer"
+        ]
       });
     </script>
   </body>

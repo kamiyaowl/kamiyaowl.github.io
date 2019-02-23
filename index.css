@@ -24,7 +24,9 @@
 .fa-2x {
     margin-right: 10px;
 }
-
+.icon {
+    color: slateblue;
+}
 /* iTyped.js */
 .ityped-cursor {
     font-size: 2.2rem;
