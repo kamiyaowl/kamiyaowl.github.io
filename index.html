@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta lang="en"/>
-    <meta charset="utf-8"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-135070516-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-135070516-1");
+    </script>
+    
+    <meta lang="en" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>kamiyaowl.github.io</title>
-    <meta name="description" content="kamiyaowl's portfolio.">
+    <meta name="description" content="kamiyaowl's portfolio." />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.0.0/theme-chalk/index.css"
@@ -276,8 +291,7 @@
       ELEMENT.locale("ja", ELEMENT.lang.ja);
       new Vue({
         el: "#app",
-        data: () => ({
-        })
+        data: () => ({})
       });
       ityped.init(document.querySelector("#ityped"), {
         loop: true,
@@ -294,7 +308,7 @@
           "Application Engineer",
           "Back-end Engineer",
           "Front-end Engineer"
-        ],
+        ]
       });
     </script>
   </body>
