@@ -13,10 +13,31 @@
 }
 .card {
     margin: 5px;
+    min-height: auto;
 }
 .image {
     width: 100%;
-    display: block;
+}
+.el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
+  }
+.bottom {
+    margin-bottom: 13px;
+    line-height: 12px;
+    min-height: 20px;
+  }
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both
 }
 .menu {
     text-align: left;
